@@ -2,7 +2,9 @@
 # https://github.com/robocorp/rcc/blob/master/docs/recipes.md#what-is-in-robotyaml
 
 tasks:
-  Run Task:
+  producer:
+    shell: python -m robocorp.tasks run news_configs.py
+  consumer:
     shell: python -m robocorp.tasks run tasks.py
 
 environmentConfigs:

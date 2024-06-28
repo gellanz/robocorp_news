@@ -5,12 +5,14 @@ import time
 
 
 class Robot:
-    def __init__(self, browser, phrase):
+    def __init__(self, browser, phrase, type_news, sort_by):
         self.browser = browser
         user_agent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36"
         self.browser.configure(headless=True)
         self.browser.configure_context(user_agent=user_agent)
         self.phrase = phrase
+        self.type_news = type_news
+        self.sort_by = sort_by
 
     def navigate(self):
         # Launch the browser with custom user agent
@@ -42,13 +44,7 @@ class Robot:
 
         # politics
         page.click(
-            "body > div.page-content > ps-search-results-module > form > div.search-results-module-ajax > ps-search-filters > div > aside > div > div.search-results-module-filters-content.SearchResultsModule-filters-content > div:nth-child(1) > ps-toggler > ps-toggler > div > ul > li:nth-child(1) > div > div.checkbox-input > label > input"
-        )
-
-        time.sleep(1)
-        # world and nation
-        page.click(
-            "body > div.page-content > ps-search-results-module > form > div.search-results-module-ajax > ps-search-filters > div > aside > div > div.search-results-module-filters-content.SearchResultsModule-filters-content > div:nth-child(1) > ps-toggler > ps-toggler > div > ul > li:nth-child(2) > div > div.checkbox-input > label > input"
+            f"body > div.page-content > ps-search-results-module > form > div.search-results-module-ajax > ps-search-filters > div > aside > div > div.search-results-module-filters-content.SearchResultsModule-filters-content > div:nth-child(1) > ps-toggler > ps-toggler > div > ul > li:nth-child({self.type_news}) > div > div.checkbox-input > label > input"
         )
 
         time.sleep(1)
@@ -56,7 +52,7 @@ class Robot:
         date_locator = page.locator(
             "body > div.page-content > ps-search-results-module > form > div.search-results-module-ajax > ps-search-filters > div > main > div.search-results-module-results-header > div.search-results-module-sorts > div > label > select"
         )
-        date_locator.select_option("1")
+        date_locator.select_option(self.sort_by)
         page.wait_for_load_state()
 
         time.sleep(1)
@@ -69,7 +65,7 @@ class Robot:
         description_locator = news_locator.locator(".promo-description")
         time_locator = news_locator.locator(".promo-timestamp")
         dataset = []
-        for i in range(10):
+        for i in range(9):
             news_analizer = NewsAnalyzer(
                 title_locator=title_locator.nth(i).all_inner_texts()[0],
                 description_locator=description_locator.nth(i).all_inner_texts()[0],
