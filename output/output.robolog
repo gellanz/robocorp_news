@@ -1,0 +1,468 @@
+V 0.0.4
+T 2024-06-28T15:39:19.280+00:00
+ID 1|957d772c-3564-11ef-b112-00155dbf363a
+I "sys.platform=linux"
+I "python=3.10.12 | packaged by conda-forge | (main, Jun 23 2023, 22:40:32) [GCC 12.3.0]"
+M a:"tasks.py"
+SR a|0.002
+M c:"Collect tasks"
+M d:"setup"
+M e:""
+P b:c|d|e|e|0
+ST b|0.002
+M f:"regular"
+M g:"\nCollecting tasks from: tasks.py\n"
+C f|g|0.002
+M h:"stderr"
+M i:"2024-06-28 09:39:20,190 - RPA.core.certificates - INFO - Truststore injection done, using system certificate store to validate HTTPS.\n"
+C h|i|0.91
+M j:"PASS"
+ET j|e|2.647
+M l:"robot_spare_bin_python"
+M m:"tasks"
+M n:"/home/gellanz/projects/news_rpa/tasks.py"
+M o:null
+P k:l|m|n|o|8
+ST k|2.647
+M p:"======================= "
+C f|p|2.647
+M q:"Running: "
+C f|q|2.647
+M r:"task_name"
+C r|l|2.647
+M s:" ========================\n"
+C f|s|2.647
+M t:"METHOD"
+SE k|t|2.648
+M v:"Robot.__init__"
+M w:"news_robot"
+M x:"/home/gellanz/projects/news_rpa/news_robot.py"
+P u:v|w|x|e|8
+SE u|t|2.648
+M y:"browser"
+M z:"module"
+M A:"<module 'robocorp.browser' from '/home/gellanz/.robocorp/holotree/96113aa_b1f3c24_09529949/lib/python3.10/site-packages/robocorp/browser/__init__.py'>"
+EA y|z|A
+M B:"phrase"
+M C:"str"
+M D:"'Biden'"
+EA B|C|D
+P E:v|w|x|e|10
+M F:"user_agent"
+M G:"'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36'"
+AS E|F|C|G|2.648
+M I:"configure"
+M J:"robocorp.browser"
+M K:"/home/gellanz/.robocorp/holotree/96113aa_b1f3c24_09529949/lib/python3.10/site-packages/robocorp/browser/__init__.py"
+P H:I|J|K|e|18
+SE H|t|2.648
+M L:"kwargs"
+M M:"dict"
+M N:"{'headless': True}"
+EA L|M|N
+EE t|j|2.65
+M P:"configure_context"
+P O:P|J|K|e|87
+SE O|t|2.651
+M Q:"{'user_agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36'}"
+EA L|M|Q
+EE t|j|2.655
+EE t|j|2.655
+P R:l|m|n|e|9
+M S:"robot"
+M T:"Robot"
+M U:"<news_robot.Robot object at 0x7f997c003040>"
+AS R|S|T|U|2.655
+M W:"Robot.navigate"
+P V:W|w|x|e|15
+SE V|t|2.655
+M Y:"goto"
+P X:Y|J|K|e|212
+SE X|t|2.655
+M Z:"url"
+M 0:"'https://www.latimes.com/'"
+EA Z|C|0
+M 1:"Playwright browsers path: /home/gellanz/.robocorp/playwright)"
+M 3:"playwright"
+M 4:"/home/gellanz/.robocorp/holotree/96113aa_b1f3c24_09529949/lib/python3.10/site-packages/robocorp/browser/_context.py"
+P 2:3|J|4|e|62
+L D|1|2|62|2.655
+M 5:"TimeoutError: Timeout 30000ms exceeded.\nCall log:\nnavigating to \"https://www.latimes.com/\", waiting until \"load\"\n"
+STB 5|32.873
+M 6:"/home/gellanz/.robocorp/holotree/96113aa_b1f3c24_09529949/lib/python3.10/site-packages/playwright/_impl/_connection.py"
+M 7:"wrap_api_call"
+M 8:"return await cb()"
+TBE 6|512|7|8
+M 9:"self"
+M aa:"Connection"
+M ab:"<playwright._impl._connection.Connection object at 0x7f99782d7b20>"
+TBV 9|aa|ab
+M ac:"cb"
+M ad:"function"
+M ae:"<function Channel.send.<locals>.<lambda> at 0x7f9948f77130>"
+TBV ac|ad|ae
+M af:"is_internal"
+M ag:"bool"
+M ah:"False"
+TBV af|ag|ah
+M ai:"task"
+M aj:"Task"
+M ak:"<Task finished name='Task-7' coro=<Page.goto() done, defined at /home/gellanz/.robocorp/holotree/96113aa_b1f3c24_09529949/lib/python3.10/site-packages/playwright/_impl/_page.py:512> exception=TimeoutError('Page.goto: Timeout 30000ms exceeded.\\nCall log:\\nnavigating to \"https://www.latimes.com/\", waiting until \"load\"\\n')>"
+TBV ai|aj|ak
+M al:"st"
+M am:"list"
+M an:"[FrameInfo(frame=<frame at 0x7f99499e2d90, file '/home/gellanz/.robocorp/holotree/96113aa_b1f3c24_09529949/lib/python3.10/site-packages/playwright/_impl/_sync_base.py', line 115, code _sync>, filename='/home/gellanz/.robocorp/holotree/96113aa_b1f3c24_09529949/lib/python3.10/site-packages/playwright/_impl/_sync_base.py', lineno=108, function='_sync', code_context=['        setattr(task, \"__pw_stack__\", inspect.stack())\\n'], index=0), FrameInfo(frame=<frame at 0x565401f62ea0, file '/home/gellanz/.robocorp/holotree/96113aa_b1f3c24_09529949/lib/python3.10/site-packages/playwright/sync_api/_generated.py', line 8686, code goto>, filename='/home/gellanz/.robocorp/holotree/96113aa_b1f3c24_09529949/lib/python3.10/site-packages/playwright/sync_api/_generated.py', lineno=8686, function='goto', code_context=['            self._sync(\\n'], index=0), FrameInfo(frame=<frame at 0x5654028eca20, file '/home/gellanz/.robocorp/holotree/96113aa_b1f3c24_09529949/lib/python3.10/site-packages/robocorp/browser/__init__.py', line 223, code goto>, filename='/home/gellanz/.robocorp/holotree/96113aa_b1f3c24_09529949/lib/python3.10/site-packages/robocorp/browser/__init__.py', lineno=224, function='goto', code_context=['    p.goto(url)\\n'], index=0), FrameInfo(frame=<frame at 0x7f9978de6ec0, file '/home/gellanz/projects/news_rpa/news_robot.py', line 17, code navigate>, filename='/home/gellanz/projects/news_rpa/news_robot.py', lineno=17, function='navigate', code_context=['        self.browser.goto(\"https://www.latimes.com/\")\\n'], index=0), FrameInfo(frame=<frame at 0x7f9978dbed40, file '/home/gellanz/projects/news_rpa/tasks.py', line 10, code robot_spare_bin_python>, filename='/home/gellanz/projects/news_rpa/tasks.py', lineno=10, function='robot_spare_bin_python', code_context=['    news_locator = robot.navigate()\\n'], index=0), FrameInfo(frame=<frame at 0x7f9978de7a60, file '/home/gellanz/.robocorp/holotree/96113aa_b1f3c24_09529949/lib/python3.10/site-packages/robocorp/tasks/_task.py', line 89, code run>, filename='/home/gellanz/.robocorp/holotree/96113aa_b1f3c24_09529949/lib/python3.10/site-packages/robocorp/tasks/_task.py', lineno=89, function='run', code_context=['        return self.method(*args, **kwargs)\\n'], index=0), FrameInfo(frame=<frame at 0x56540174b0f0, file '/home/gellanz/.robocorp/holotree/96113aa_b1f3c24_09529949/lib/python3.10/site-packages/robocorp/tasks/_commands.py', line 440, code run>, filename='/home/gellanz/.robocorp/holotree/96113aa_b1f3c24_09529949/lib/python3.10/site-packages/robocorp/tasks/_commands.py', lineno=440, function='run', code_context=['                            result = task.run(*args, **kwargs)\\n'], index=0), FrameInfo(frame=<frame at 0x7f997bc8eae0, file '/home/gellanz/.robocorp/holotree/96113aa_b1f3c24_09529949/lib/python3.10/site-packages/robocorp/tasks/_argdispatch.py', line 22, code _dispatch>, filename='/home/gellanz/.robocorp/holotree/96113aa_b1f3c24_09529949/lib/python3.10/site-packages/robocorp/tasks/_argdispatch.py', lineno=22, function='_dispatch', code_context=['        return method(**dct)\\n'], index=0), FrameInfo(frame=<frame at 0x7f997bf87640, file '/home/gellanz/.robocorp/holotree/96113aa_b1f3c24_09529949/lib/python3.10/site-packages/robocorp/tasks/_argdispatch.py', line 227, code process_args>, filename='/home/gellanz/.robocorp/holotree/96113aa_b1f3c24_09529949/lib/python3.10/site-packages/robocorp/tasks/_argdispatch.py', lineno=227, function='process_args', code_context=['        return self._dispatch(parsed)\\n'], index=0), FrameInfo(frame=<frame at 0x7f997bd485e0, file '/home/gellanz/.robocorp/holotree/96113aa_b1f3c24_09529949/lib/python3.10/site-packages/robocorp/tasks/cli.py', line 78, code main>, filename='/home/gellanz/.robocorp/holotree/96113aa_b1f3c24_09529949/lib/python3.10/site-packages/robocorp/tasks/cli.py', lineno=78, function='main', code_context=['    returncode = dispatcher.process_args(args)\\n'], index=0), FrameInfo(frame=<frame at 0x7f997bf84440, file '/home/gellanz/.robocorp/holotree/96113aa_b1f3c24_09529949/lib/python3.10/site-packages/robocorp/tasks/__main__.py', line 4, code <module>>, filename='/home/gellanz/.robocorp/holotree/96113aa_b1f3c24_09529949/lib/python3.10/site-packages/robocorp/tasks/__main__.py', lineno=4, function='<module>', code_context=['    main()\\n'], index=0), FrameInfo(frame=<frame at 0x56540163a7a0, file '/home/gellanz/.robocorp/holotree/96113aa_b1f3c24_09529949/lib/python3.10/runpy.py', line 86, code _run_code>, filename='/home/gellanz/.robocorp/holotree/96113aa_b1f3c24_09529949/lib/python3.10/runpy.py', lineno=86, function='_run_code', code_context=['    exec(code, run_globals)\\n'], index=0), FrameInfo(frame=<frame at 0x7f997c03bc40, file '/home/gellanz/.robocorp/holotree/96113aa_b1f3c24_09529949/lib/python3.10/runpy.py', line 196, code _run_module_as_main>, filename='/home/gellanz/.robocorp/holotree/96113aa_b1f3c24_09529949/lib/python3.10/runpy.py', lineno=196, function='_run_module_as_main', code_context=['    return _run_code(code, main_globals, None,\\n'], index=0)]"
+TBV al|am|an
+M ao:"parsed_st"
+M ap:"{'frames': [{'file': '/home/gellanz/.robocorp/holotree/96113aa_b1f3c24_09529949/lib/python3.10/site-packages/robocorp/browser/__init__.py', 'line': 224, 'column': 0, 'function': 'goto'}, {'file': '/home/gellanz/projects/news_rpa/news_robot.py', 'line': 17, 'column': 0, 'function': 'Robot.navigate'}, {'file': '/home/gellanz/projects/news_rpa/tasks.py', 'line': 10, 'column': 0, 'function': 'robot_spare_bin_python'}, {'file': '/home/gellanz/.robocorp/holotree/96113aa_b1f3c24_09529949/lib/python3.10/site-packages/robocorp/tasks/_task.py', 'line': 89, 'column': 0, 'function': 'Task.run'}, {'file': '/home/gellanz/.robocorp/holotree/96113aa_b1f3c24_09529949/lib/python3.10/site-packages/robocorp/tasks/_commands.py', 'line': 440, 'column': 0, 'function': 'run'}, {'file': '/home/gellanz/.robocorp/holotree/96113aa_b1f3c24_09529949/lib/python3.10/site-packages/robocorp/tasks/_argdispatch.py', 'line': 22, 'column': 0, 'function': '_ArgDispatcher._dispatch'}, {'file': '/home/gellanz/.robocorp/holotree/96113aa_b1f3c24_09529949/lib/python3.10/site-packages/robocorp/tasks/_argdispatch.py', 'line': 227, 'column': 0, 'function': '_ArgDispatcher.process_args'}, {'file': '/home/gellanz/.robocorp/holotree/96113aa_b1f3c24_09529949/lib/python3.10/site-packages/robocorp/tasks/cli.py', 'line': 78, 'column': 0, 'function': 'main'}, {'file': '/home/gellanz/.robocorp/holotree/96113aa_b1f3c24_09529949/lib/python3.10/site-packages/robocorp/tasks/__main__.py', 'line': 4, 'column': 0, 'function': '<module>'}, {'file': '/home/gellanz/.robocorp/holotree/96113aa_b1f3c24_09529949/lib/python3.10/runpy.py', 'line': 86, 'column': 0, 'function': '_run_code'}, {'file': '/home/gellanz/.robocorp/holotree/96113aa_b1f3c24_09529949/lib/python3.10/runpy.py', 'line': 196, 'column': 0, 'function': '_run_module_as_main'}], 'apiName': 'Page.goto'}"
+TBV ao|M|ap
+M aq:"inner_send"
+M ar:"result = next(iter(done)).result()"
+TBE 6|97|aq|ar
+M as:"Channel"
+M at:"<playwright._impl._connection.Channel object at 0x7f99797ff280>"
+TBV 9|as|at
+M au:"method"
+M av:"'goto'"
+TBV au|C|av
+M aw:"params"
+M ax:"{'url': 'https://www.latimes.com/'}"
+TBV aw|M|ax
+M ay:"return_as_dict"
+TBV ay|ag|ah
+M az:"callback"
+M aA:"ProtocolCallback"
+M aB:"<playwright._impl._connection.ProtocolCallback object at 0x7f99797ffe20>"
+TBV az|aA|aB
+M aC:"done"
+M aD:"set"
+M aE:"{<Future finished exception=TimeoutError('Timeout 30000ms exceeded.\\nCall log:\\nnavigating to \"https://www.latimes.com/\", waiting until \"load\"\\n')>}"
+TBV aC|aD|aE
+M aF:"_"
+M aG:"{<Future pending>}"
+TBV aF|aD|aG
+ETB 32.873
+M aH:"TimeoutError: Page.goto: Timeout 30000ms exceeded.\nCall log:\nnavigating to \"https://www.latimes.com/\", waiting until \"load\"\n (this exception occurred during handling of the previous exception)"
+STB aH|32.873
+M aI:"/home/gellanz/.robocorp/holotree/96113aa_b1f3c24_09529949/lib/python3.10/site-packages/robocorp/tasks/_task.py"
+M aJ:"run"
+M aK:"return self.method(*args, **kwargs)"
+TBE aI|89|aJ|aK
+M aL:"Task(robot_spare_bin_python, status: NOT_RUN)"
+TBV 9|aj|aL
+M aM:"args"
+M aN:"tuple"
+M aO:"()"
+TBV aM|aN|aO
+M aP:"{}"
+TBV L|M|aP
+M aQ:"sig"
+M aR:"Signature"
+M aS:"<Signature ()>"
+TBV aQ|aR|aS
+M aT:"news_locator = robot.navigate()"
+TBE n|10|l|aT
+TBV S|T|U
+M aU:"navigate"
+M aV:"self.browser.goto(\"https://www.latimes.com/\")"
+TBE x|17|aU|aV
+TBV 9|T|U
+M aW:"p.goto(url)"
+TBE K|224|Y|aW
+TBV Z|C|0
+M aX:"p"
+M aY:"Page"
+M aZ:"<Page url='https://www.latimes.com/'>"
+TBV aX|aY|aZ
+M a0:"/home/gellanz/.robocorp/holotree/96113aa_b1f3c24_09529949/lib/python3.10/site-packages/playwright/sync_api/_generated.py"
+M a1:"self._sync("
+TBE a0|8686|Y|a1
+TBV 9|aY|aZ
+TBV Z|C|0
+M a2:"timeout"
+M a3:"NoneType"
+M a4:"None"
+TBV a2|a3|a4
+M a5:"wait_until"
+TBV a5|a3|a4
+M a6:"referer"
+TBV a6|a3|a4
+M a7:"/home/gellanz/.robocorp/holotree/96113aa_b1f3c24_09529949/lib/python3.10/site-packages/playwright/_impl/_sync_base.py"
+M a8:"_sync"
+M a9:"return task.result()"
+TBE a7|115|a8|a9
+TBV 9|aY|aZ
+M ba:"coro"
+M bb:"coroutine"
+M bc:"<coroutine object Page.goto at 0x7f99499765e0>"
+TBV ba|bb|bc
+M bd:"__tracebackhide__"
+M be:"True"
+TBV bd|ag|be
+TBV ai|aj|ak
+M bf:"g_self"
+M bg:"greenlet"
+M bh:"<greenlet.greenlet object at 0x7f997b015700 (otid=0x7f997bd593b0) current active started main>"
+TBV bf|bg|bh
+M bi:"/home/gellanz/.robocorp/holotree/96113aa_b1f3c24_09529949/lib/python3.10/site-packages/playwright/_impl/_page.py"
+M bj:"return await self._main_frame.goto(**locals_to_params(locals()))"
+TBE bi|519|Y|bj
+TBV 9|aY|aZ
+TBV Z|C|0
+TBV a2|a3|a4
+M bk:"waitUntil"
+TBV bk|a3|a4
+TBV a6|a3|a4
+M bl:"/home/gellanz/.robocorp/holotree/96113aa_b1f3c24_09529949/lib/python3.10/site-packages/playwright/_impl/_frame.py"
+M bm:"await self._channel.send(\"goto\", locals_to_params(locals()))"
+TBE bl|145|Y|bm
+M bn:"Frame"
+M bo:"<Frame name= url='https://www.latimes.com/'>"
+TBV 9|bn|bo
+TBV Z|C|0
+TBV a2|a3|a4
+TBV bk|a3|a4
+TBV a6|a3|a4
+M bp:"send"
+M bq:"return await self._connection.wrap_api_call("
+TBE 6|59|bp|bq
+TBV au|C|av
+TBV aw|M|ax
+TBV 9|as|at
+M br:"raise rewrite_error(error, f\"{parsed_st['apiName']}: {error}\") from None"
+TBE 6|514|7|br
+TBV 9|aa|ab
+TBV ac|ad|ae
+TBV af|ag|ah
+TBV ai|aj|ak
+TBV al|am|an
+TBV ao|M|ap
+ETB 32.874
+M bs:"ERROR"
+EE t|bs|32.875
+EE t|bs|32.875
+EE t|bs|32.875
+C r|l|37.903
+M bt:" status: "
+C f|bt|37.903
+M bu:"error"
+M bv:"FAIL\n"
+C bu|bv|37.903
+M bw:"\nPage.goto: Timeout 30000ms exceeded.\nCall log:\nnavigating to \"https://www.latimes.com/\", waiting until \"load\"\n\n"
+C bu|bw|37.903
+M bx:"=============== "
+C f|bx|37.903
+M by:"Full Traceback (running "
+C f|by|37.904
+C r|l|37.904
+M bz:")"
+C f|bz|37.904
+M bA:" ================\n"
+C f|bA|37.904
+M bB:"traceback"
+M bC:"Traceback (most recent call last):\n  File \"/home/gellanz/.robocorp/holotree/96113aa_b1f3c24_09529949/lib/python3.10/site-packages/robocorp/tasks/_commands.py\", line 440, in run\n    result = task.run(*args, **kwargs)\n  File \"/home/gellanz/.robocorp/holotree/96113aa_b1f3c24_09529949/lib/python3.10/site-packages/robocorp/tasks/_task.py\", line 89, in run\n    return self.method(*args, **kwargs)\n  File \"/home/gellanz/projects/news_rpa/tasks.py\", line 10, in robot_spare_bin_python\n    news_locator = robot.navigate()\n  File \"/home/gellanz/projects/news_rpa/news_robot.py\", line 17, in navigate\n    self.browser.goto(\"https://www.latimes.com/\")\n  File \"/home/gellanz/.robocorp/holotree/96113aa_b1f3c24_09529949/lib/python3.10/site-packages/robocorp/browser/__init__.py\", line 224, in goto\n    p.goto(url)\n  File \"/home/gellanz/.robocorp/holotree/96113aa_b1f3c24_09529949/lib/python3.10/site-packages/playwright/sync_api/_generated.py\", line 8686, in goto\n    self._sync(\n  File \"/home/gellanz/.robocorp/holotree/96113aa_b1f3c24_09529949/lib/python3.10/site-packages/playwright/_impl/_sync_base.py\", line 115, in _sync\n    return task.result()\n  File \"/home/gellanz/.robocorp/holotree/96113aa_b1f3c24_09529949/lib/python3.10/site-packages/playwright/_impl/_page.py\", line 519, in goto\n    return await self._main_frame.goto(**locals_to_params(locals()))\n  File \"/home/gellanz/.robocorp/holotree/96113aa_b1f3c24_09529949/lib/python3.10/site-packages/playwright/_impl/_frame.py\", line 145, in goto\n    await self._channel.send(\"goto\", locals_to_params(locals()))\n  File \"/home/gellanz/.robocorp/holotree/96113aa_b1f3c24_09529949/lib/python3.10/site-packages/playwright/_impl/_connection.py\", line 59, in send\n    return await self._connection.wrap_api_call(\n  File \"/home/gellanz/.robocorp/holotree/96113aa_b1f3c24_09529949/lib/python3.10/site-packages/playwright/_impl/_connection.py\", line 514, in wrap_api_call\n    raise rewrite_error(error, f\"{parsed_st['apiName']}: {error}\") from None\nplaywright._impl._errors.TimeoutError: Page.goto: Timeout 30000ms exceeded.\nCall log:\nnavigating to \"https://www.latimes.com/\", waiting until \"load\"\n\n\n"
+C bB|bC|37.904
+M bD:"================================================================================\n"
+C f|bD|37.904
+M bE:"FAIL"
+M bF:"Page.goto: Timeout 30000ms exceeded.\nCall log:\nnavigating to \"https://www.latimes.com/\", waiting until \"load\"\n"
+ET bE|bF|37.905
+M bH:"Teardown tasks"
+M bI:"teardown"
+P bG:bH|bI|e|e|0
+ST bG|37.905
+M bJ:"Process snapshot"
+SPS bJ|37.978
+M bK:"System information:\nMemory: Total: 13.5 G, Available: 11.4 G, Used: 15.6 %\nCPUs: 16"
+P bL:e|e|e|e|0
+L I|bK|bL|0|38.082
+M bM:"Current Process: python3.10 (pid: 20198, status: running)\nCommand Line: /home/gellanz/.robocorp/holotree/96113aa_b1f3c24_09529949/bin/python3.10 -m robocorp.tasks run tasks.py\nStarted: 09:39:18\nParent pid: 20166\nResident Set Size: 125.6 M\nVirtual Memory Size: 995.8 M"
+L I|bM|bL|0|38.083
+M bN:"OutputToPortThread|Thread ID: 140297166231104 (daemon)"
+STD bN|38.083
+M bO:"/home/gellanz/.robocorp/holotree/96113aa_b1f3c24_09529949/lib/python3.10/threading.py"
+M bP:"_bootstrap"
+M bQ:"self._bootstrap_inner()"
+TBE bO|973|bP|bQ
+M bR:"Thread"
+M bS:"<Thread(OutputToPortThread, started daemon 140297166231104)>"
+TBV 9|bR|bS
+M bT:"_bootstrap_inner"
+M bU:"self.run()"
+TBE bO|1016|bT|bU
+TBV 9|bR|bS
+M bV:"self._target(*self._args, **self._kwargs)"
+TBE bO|953|aJ|bV
+TBV 9|bR|bS
+M bW:"/home/gellanz/.robocorp/holotree/96113aa_b1f3c24_09529949/lib/python3.10/site-packages/robocorp/tasks/_log_output_setup.py"
+M bX:"write_in_thread"
+M bY:"msg = q.get()"
+TBE bW|73|bX|bY
+M bZ:"msg"
+M b0:"'ST bG|37.903\\n'"
+TBV bZ|C|b0
+M b1:"client_socket"
+M b2:"socket"
+M b3:"<socket.socket fd=5, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 39862), raddr=('127.0.0.1', 40235)>"
+TBV b1|b2|b3
+M b4:"log"
+M b5:"<module 'robocorp.log' from '/home/gellanz/.robocorp/holotree/96113aa_b1f3c24_09529949/lib/python3.10/site-packages/robocorp/log/__init__.py'>"
+TBV b4|z|b5
+M b6:"port_in_env"
+M b7:"'40235'"
+TBV b6|C|b7
+M b8:"q"
+M b9:"Queue"
+M ca:"<queue.Queue object at 0x7f997bcfcfa0>"
+TBV b8|b9|ca
+M cc:"/home/gellanz/.robocorp/holotree/96113aa_b1f3c24_09529949/lib/python3.10/queue.py"
+M cd:"get"
+M ce:"self.not_empty.wait()"
+TBE cc|171|cd|ce
+TBV 9|b9|ca
+M cf:"block"
+TBV cf|ag|be
+TBV a2|a3|a4
+M cg:"wait"
+M ch:"waiter.acquire()"
+TBE bO|320|cg|ch
+M ci:"Condition"
+M cj:"<Condition(<unlocked _thread.lock object at 0x7f997b0382c0>, 1)>"
+TBV 9|ci|cj
+TBV a2|a3|a4
+M ck:"waiter"
+M cl:"lock"
+M cm:"<locked _thread.lock object at 0x7f9948c3f400>"
+TBV ck|cl|cm
+M cn:"saved_state"
+TBV cn|a3|a4
+M co:"gotit"
+TBV co|ag|ah
+ETD 38.083
+M cp:"MainThread|Thread ID: 140297188570944 (non daemon)"
+STD cp|38.083
+M cq:"/home/gellanz/.robocorp/holotree/96113aa_b1f3c24_09529949/lib/python3.10/site-packages/robocorp/log/__init__.py"
+M cr:"process_snapshot"
+M cs:"robo_logger.process_snapshot()"
+TBE cq|270|cr|cs
+M ct:"logger_instances"
+M cu:"{<robocorp.log._robo_logger._RoboLogger object at 0x7f997bc18490>: 1, <robocorp.log._robo_logger._RoboLogger object at 0x7f997c001300>: 1}"
+TBV ct|M|cu
+M cv:"robo_logger"
+M cw:"_RoboLogger"
+M cx:"<robocorp.log._robo_logger._RoboLogger object at 0x7f997bc18490>"
+TBV cv|cw|cx
+M cy:"/home/gellanz/.robocorp/holotree/96113aa_b1f3c24_09529949/lib/python3.10/site-packages/robocorp/log/_robo_logger.py"
+M cz:"new_func"
+M cA:"return func(self, *args, **kwargs)"
+TBE cy|20|cz|cA
+TBV 9|cw|cx
+TBV aM|aN|aO
+TBV L|M|aP
+M cB:"func"
+M cC:"<function _RoboLogger.process_snapshot at 0x7f997b035c60>"
+TBV cB|ad|cC
+M cD:"return self._robot_output_impl.process_snapshot(hide_vars)"
+TBE cy|416|cr|cD
+TBV 9|cw|cx
+M cE:"hide_vars"
+TBV cE|ag|ah
+M cF:"/home/gellanz/.robocorp/holotree/96113aa_b1f3c24_09529949/lib/python3.10/site-packages/robocorp/log/_robo_output_impl.py"
+M cG:"self._dump_threads(hide_vars)"
+TBE cF|748|cr|cG
+TBV cE|ag|ah
+TBV b4|z|b5
+M cH:"entry_id"
+M cI:"'ps_2'"
+TBV cH|C|cI
+M cJ:"entry_type"
+M cK:"'process_snapshot'"
+TBV cJ|C|cK
+M cL:"psutil"
+M cM:"<module 'psutil' from '/home/gellanz/.robocorp/holotree/96113aa_b1f3c24_09529949/lib/python3.10/site-packages/psutil/__init__.py'>"
+TBV cL|z|cM
+M cN:"AccessDenied"
+M cO:"type"
+M cP:"<class 'psutil.AccessDenied'>"
+TBV cN|cO|cP
+M cQ:"NoSuchProcess"
+M cR:"<class 'psutil.NoSuchProcess'>"
+TBV cQ|cO|cR
+M cS:"ZombieProcess"
+M cT:"<class 'psutil.ZombieProcess'>"
+TBV cS|cO|cT
+M cU:"curr_process"
+M cV:"Process"
+M cW:"psutil.Process(pid=20198, name='python3.10', status='running', started='09:39:18')"
+TBV cU|cV|cW
+M cX:"log_info"
+M cY:"<function _RoboOutputImpl.process_snapshot.<locals>.log_info at 0x7f9949ff25f0>"
+TBV cX|ad|cY
+M cZ:"memory_info"
+M c0:"'Total: 13.5 G, Available: 11.4 G, Used: 15.6 %'"
+TBV cZ|C|c0
+M c1:"child_i"
+M c2:"int"
+M c3:"0"
+TBV c1|c2|c3
+M c4:"child"
+TBV c4|cV|cW
+M c5:"name"
+M c6:"'python3.10'"
+TBV c5|C|c6
+M c7:"status"
+M c8:"'running'"
+TBV c7|C|c8
+M c9:"create_time"
+M da:"'09:39:18'"
+TBV c9|C|da
+M db:"ppid"
+M dc:"'20166'"
+TBV db|C|dc
+M dd:"cmdline"
+M de:"'/home/gellanz/.robocorp/holotree/96113aa_b1f3c24_09529949/bin/python3.10 -m robocorp.tasks run tasks.py'"
+TBV dd|C|de
+M df:"rss"
+M dg:"'125.6 M'"
+TBV df|C|dg
+M dh:"vms"
+M di:"'995.8 M'"
+TBV dh|C|di
+M dj:"proc_memory_info"
+M dk:"pmem"
+M dl:"pmem(rss=131727360, vms=1044213760, shared=31784960, text=2121728, lib=0, data=747196416, dirty=0)"
+TBV dj|dk|dl
+M dm:"message"
+M dn:"'Current Process: python3.10 (pid: 20198, status: running)\\nCommand Line: /home/gellanz/.robocorp/holotree/96113aa_b1f3c24_09529949/bin/python3.10 -m robocorp.tasks run tasks.py\\nStarted: 09:39:18\\nParent pid: 20166\\nResident Set Size: 125.6 M\\nVirtual Memory Size: 995.8 M'"
+TBV dm|C|dn
+M do:"_RoboOutputImpl"
+M dp:"<robocorp.log._robo_output_impl._RoboOutputImpl object at 0x7f997bc61c90>"
+TBV 9|do|dp
+M dq:"_dump_threads"
+M dr:"stack.append((f, f.f_lineno))"
+TBE cF|769|dq|dr
+TBV 9|do|dp
+TBV cE|ag|ah
+M ds:"thread_id"
+M dt:"140297188570944"
+TBV ds|c2|dt
+M du:"frame"
+M dv:"<frame at 0x7f9948eac440, file '/home/gellanz/.robocorp/holotree/96113aa_b1f3c24_09529949/lib/python3.10/site-packages/robocorp/log/_robo_output_impl.py', line 773, code _dump_threads>"
+TBV du|du|dv
+M dw:"thread"
+M dx:"_MainThread"
+M dy:"<_MainThread(MainThread, started 140297188570944)>"
+TBV dw|dx|dy
+M dz:"title"
+M dA:"'MainThread|Thread ID: 140297188570944 (non daemon)'"
+TBV dz|C|dA
+M dB:"f"
+M dC:"<frame at 0x56540174b0f0, file '/home/gellanz/.robocorp/holotree/96113aa_b1f3c24_09529949/lib/python3.10/site-packages/robocorp/tasks/_commands.py', line 480, code run>"
+TBV dB|du|dC
+M dD:"stack"
+M dE:"[(<frame at 0x7f9948c3bc10, file '/home/gellanz/.robocorp/holotree/96113aa_b1f3c24_09529949/lib/python3.10/site-packages/robocorp/log/__init__.py', line 270, code process_snapshot>, 270), (<frame at 0x7f997b3e4040, file '/home/gellanz/.robocorp/holotree/96113aa_b1f3c24_09529949/lib/python3.10/site-packages/robocorp/log/_robo_logger.py', line 20, code new_func>, 20), (<frame at 0x7f9948faf100, file '/home/gellanz/.robocorp/holotree/96113aa_b1f3c24_09529949/lib/python3.10/site-packages/robocorp/log/_robo_logger.py', line 416, code process_snapshot>, 416), (<frame at 0x56540288da30, file '/home/gellanz/.robocorp/holotree/96113aa_b1f3c24_09529949/lib/python3.10/site-packages/robocorp/log/_robo_output_impl.py', line 748, code process_snapshot>, 748), (<frame at 0x7f9948eac440, file '/home/gellanz/.robocorp/holotree/96113aa_b1f3c24_09529949/lib/python3.10/site-packages/robocorp/log/_robo_output_impl.py', line 773, code _dump_threads>, 769)]"
+TBV dD|am|dE
+ETD 38.085
+EPS 38.085
+ET j|e|38.087
+ER bs|38.087
